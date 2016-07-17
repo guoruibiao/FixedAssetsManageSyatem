@@ -3,10 +3,10 @@
 ---
 
 ## Base On
-OS: Windows 7 64
-IDE: IDEA
-Programming Language: Java, html,markdown, sql
-Database: MySQL
+- OS: Windows 7 64
+- IDE: IDEA
+- Programming Language: Java, html,markdown, sql
+- Database: MySQL
 
 ---
 
