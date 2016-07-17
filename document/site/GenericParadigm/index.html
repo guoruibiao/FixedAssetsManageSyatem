@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>The Usage of Generic paradigm - 郭瑞彪&姚晋宏 固定资产管理系统</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "The Usage of Generic paradigm";
+    var mkdocs_page_input_path = "GenericParadigm.md";
+    var mkdocs_page_url = "/GenericParadigm/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 郭瑞彪&姚晋宏 固定资产管理系统</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../RequirementAnalysis/">Requirement Analysis</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DatabaseDesign/">Database Design</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Classes/">Classes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ProjectStructureAndHierachy/">Project Structure & Project Hierachy</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">The Usage of Generic paradigm</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#the-usage-of-generic-paragidm">The Usage of Generic Paragidm</a></li>
+                
+                    <li><a class="toctree-l4" href="#sample-1">sample 1</a></li>
+                
+                    <li><a class="toctree-l4" href="#sample-2">Sample 2</a></li>
+                
+                    <li><a class="toctree-l4" href="#sample-3">Sample 3</a></li>
+                
+                    <li><a class="toctree-l4" href="#sample-4">Sample 4</a></li>
+                
+                    <li><a class="toctree-l4" href="#sample-5">Sample 5</a></li>
+                
+                    <li><a class="toctree-l4" href="#sample-6">Sample 6</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UserInterfaceShow/">User Interface Show</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Experience/">Experience</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../aboutus/">aboutus</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">郭瑞彪&姚晋宏 固定资产管理系统</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>The Usage of Generic paradigm</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="the-usage-of-generic-paragidm">The Usage of Generic Paragidm</h1>
+<p>Generic Paradigm exists in java from JDK1.5 and later. It brings so many convenient for us coder.</p>
+<h2 id="sample-1">sample 1</h2>
+<pre><code>package dao;
+
+import java.util.List;
+
+/**
+ * 用于增删改查信息的抽象基类
+ * 
+ * @author 郭瑞彪
+ *
+ */
+public class BaseDao&lt;T&gt; {
+
+    /**
+     * 添加一条数据项
+     * 
+     * @param bean
+     */
+    public boolean add(T bean) {
+        return false;
+    }
+
+    /**
+     * 删除一个数据项
+     * 
+     * @param bean
+     */
+    public boolean delete(T bean) {
+        return false;
+    }
+
+    /**
+     * 修改一个数据项
+     * 
+     * @param bean
+     */
+    public boolean modify(T bean) {
+        return false;
+    }
+
+    /**
+     * 根据查询条件获取一个数据项
+     * 
+     * @param str
+     * @return
+     */
+    public T get(T str) {
+        return null;
+    }
+
+    /**
+     * 根据查询条件获取所有的数据项
+     * 
+     * @param str
+     * @return
+     */
+    public List&lt;T&gt; getAll(T str) {
+        return null;
+    }
+
+}
+</code></pre>
+<h2 id="sample-2">Sample 2</h2>
+<pre><code>
+    /**
+     * 根据用户的用户编号来实现获取该用户名下借用的所有资产的列表
+     */
+    @Override
+    public List&lt;FixedAssets&gt; findByUser(int userID) {
+        try {
+            String sql = &quot;select * from fixed_assets where assets_user = '&quot; + userID + &quot;'&quot;;
+            Connection conn = ConnectionFactory.getConnection();
+            ResultSet rs = conn.createStatement().executeQuery(sql);
+            List&lt;FixedAssets&gt; ls = AssignmentTool.assignment2BeanList(rs);
+            return ls != null ? ls : null;
+        } catch (Exception e) {
+            throw new RuntimeException(&quot;根据用户编号来获取资产单项的详细信息的时候出错了！\n&quot; + e);
+        }
+    }
+
+</code></pre>
+
+<h2 id="sample-3">Sample 3</h2>
+<pre><code>/**
+ * 罗列出所有的小类的信息
+ */
+@Override
+public List&lt;SubClass&gt; findBySubClass(String subclassName) {
+    try {
+        String sql = "select sub_class_name,class_id from sub_class where sub_class_name = '" + subclassName + "'";
+        Connection conn = ConnectionFactory.getConnection();
+        ResultSet rs = conn.createStatement().executeQuery(sql);
+        List&lt;SubClass&gt; ls = new ArrayList&lt;SubClass&gt;();
+        while (rs.next()) {
+            SubClass subclass = new SubClass();
+            subclass.setName(rs.getString("sub_class_name"));
+            int class_id = rs.getInt("class_id");
+            subclass.setClazzName(ClazzDaoImpl.getClassNameById(class_id));
+            ls.add(subclass);
+        }
+        return ls != null ? ls : null;
+    } catch (Exception e) {
+        throw new RuntimeException("根据小类属性查找所有信息失败！" + e);
+    }
+}
+</code></pre>
+<hr />
+<h2 id="sample-4">Sample 4</h2>
+<pre><code>/**
+ * 将从数据库中获得的结果集转换成一个装有返回结果的List集合
+ * 
+ * @param rs
+ * @return
+ */
+public static List&lt;FixedAssets&gt; assignment2BeanList(ResultSet rs) {
+    try {
+
+        List&lt;FixedAssets&gt; lists = new ArrayList&lt;FixedAssets&gt;();
+        while (rs.next()) {
+            FixedAssets fas = new FixedAssets();
+            fas.setName(rs.getString("assets_name"));
+            fas.setCatagory(rs.getInt("assets_catagory"));
+            fas.setModel(rs.getString("assets_model"));
+            fas.setValue(rs.getInt("assets_value"));
+            fas.setPurchaseDate(rs.getDate("assets_purchase_date"));
+            fas.setState(rs.getInt("assets_state"));
+            fas.setUser(rs.getInt("assets_user"));
+            fas.setRemark(rs.getString("assets_remark"));
+            lists.add(fas);
+        }
+        return lists;
+    } catch (Exception e) {
+        throw new RuntimeException("ResultSet to Bean Error！\n" + e);
+    }
+}
+</code></pre>
+<h2 id="sample-5">Sample 5</h2>
+<pre><code>public static List&lt;Object&gt; result2BeanList(ResultSet rs, String classType) {
+    try {
+        List&lt;Object&gt; list = new ArrayList&lt;Object&gt;();
+        while (rs.next()) {
+            Object obj = null;
+            if (classType.equals("Clazz")) {
+                obj = new Clazz();
+                ((Clazz) obj).setName(rs.getString("class_name"));
+            } else if (classType.equals("SubClass")) {
+                obj = new SubClass();
+                ((SubClass) obj).setClazzName(rs.getString("class_name"));
+                ((SubClass) obj).setName(rs.getString("sub_class_name"));
+            }
+            list.add(obj);
+        }
+        if (list != null) {
+            return list;
+        }
+    } catch (Exception e) {
+        throw new RuntimeException("结果集转换成BeanList时失败！\n" + e);
+    }
+    return null;
+}
+</code></pre>
+<h2 id="sample-6">Sample 6</h2>
+<pre><code>/*
+ * 既然是一个数据库连接池，就必须有许多的连接，所以需要使用一个集合类保存这些连接 (non-Javadoc)
+ * 
+ * @see javax.sql.CommonDataSource#getLogWriter()
+ */
+private static LinkedList&lt;Connection&gt; list = new LinkedList&lt;Connection&gt;();
+</code></pre>
+<hr />
+<!-- UY BEGIN -->
+
+<div id="uyan_frame"></div>
+
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+
+<!-- UY END -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../UserInterfaceShow/" class="btn btn-neutral float-right" title="User Interface Show">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ProjectStructureAndHierachy/" class="btn btn-neutral" title="Project Structure & Project Hierachy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ProjectStructureAndHierachy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../UserInterfaceShow/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

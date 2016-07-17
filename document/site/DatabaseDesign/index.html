@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Database Design - 郭瑞彪&姚晋宏 固定资产管理系统</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Database Design";
+    var mkdocs_page_input_path = "DatabaseDesign.md";
+    var mkdocs_page_url = "/DatabaseDesign/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 郭瑞彪&姚晋宏 固定资产管理系统</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../RequirementAnalysis/">Requirement Analysis</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Database Design</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#database-design">Database Design</a></li>
+                
+                    <li><a class="toctree-l4" href="#entity-relationship-view">Entity-Relationship View</a></li>
+                
+                    <li><a class="toctree-l4" href="#database-table-property-details">Database Table Property Details</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Classes/">Classes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ProjectStructureAndHierachy/">Project Structure & Project Hierachy</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../GenericParadigm/">The Usage of Generic paradigm</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UserInterfaceShow/">User Interface Show</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Experience/">Experience</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../aboutus/">aboutus</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">郭瑞彪&姚晋宏 固定资产管理系统</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Database Design</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="database-design">Database Design</h1>
+<p>This is also very important for the whole development. So we designed it reference our requirement analysis.</p>
+<h2 id="entity-relationship-view">Entity-Relationship View</h2>
+<p><img alt="数据库ER图" src="http://a3.qpic.cn/psb?/V147oidM132mH5/HwUIT6GaAQVqoeXs5xwWnnuA266GyNfcif*0R4xqqlg!/b/dAcBAAAAAAAA&amp;bo=nAMLA5wDCwMDCSw!&amp;rf=viewer_4" /></p>
+<h2 id="database-table-property-details">Database Table Property Details</h2>
+<ul>
+<li>
+<p><font color='green' size='5'>资产大类信息表</font><code>class</code>:  </p>
+<ul>
+<li><code>class_id</code>: 大类的类编号</li>
+<li><code>clas_name</code>: 大类的类名称属性</li>
+</ul>
+</li>
+<li>
+<p><font color='green'size='5'>资产小类信息表</font><code>sub_class</code>:   </p>
+<ul>
+<li><code>sub_class_id</code>: 小类的类编号</li>
+<li><code>sub_class_name</code>: 小类的类名称属性</li>
+<li><code>class_id</code>: 作为外键起到约束作用的列，表示小类从属于哪个大类</li>
+</ul>
+</li>
+<li>
+<p><font color='green'size='5'>资产单项信息表</font><code>fixed_assets</code>:  </p>
+<ul>
+<li><code>assets_id</code>: 资产编号</li>
+<li><code>assets_name</code>: 资产名称</li>
+<li><code>assets_catagory</code>: 资产所属的小类的类型，因为知道了小类，其所属的大类就已经确定了</li>
+<li><code>assets_model</code>:  资产的型号</li>
+<li><code>assets_value</code>:  资产的价值或者价格</li>
+<li><code>assets_purchase_date</code>: 资产的购买日期 </li>
+<li><code>assets_state</code>:  资产的状态。0表示可借，1表示维修，2 表示报废。</li>
+<li><code>assets_user</code>:   已借出资产的持有人编号，未借出此项为空</li>
+<li><code>assets_remark</code>:  资产单项的备注信息</li>
+</ul>
+</li>
+<li>
+<p><font color='green'size='5'>资产外借信息表</font><code>assets_out</code>:    </p>
+<ul>
+<li><code>assets_out_id</code>: 资产外借 编号信息</li>
+<li><code>assets_id</code>:     资产编号信息</li>
+<li><code>assets_out_admin</code>:   处理资产外借的管理员</li>
+<li><code>assets_out_user</code>:    资产外借时的使用人员的编号</li>
+<li><code>assets_out_date</code>:    资产外借日期</li>
+<li><code>assets_out_purpose</code>:   使用人员借用资产的目的，或者用途</li>
+<li><code>assets_out_remark</code>:    资产外借的时候的备注信息</li>
+</ul>
+</li>
+<li>
+<p><font color='green'size='5'>资产归还资产表</font><code>assets_in</code>:     </p>
+<ul>
+<li><code>assets_in_id</code>:  资产归还 编号信息</li>
+<li><code>assets_id</code>:     归还的资产的编号信息</li>
+<li><code>assets_in_admin</code>:  处理归还资产的管理员的编号</li>
+<li><code>assets_in_user</code>:   归还资产单项的使用人员的编号信息</li>
+<li><code>assets_in_date</code>:   资产单项被归还的日期</li>
+<li><code>assets_in_remark</code>:   资产单项被归还的备注信息</li>
+</ul>
+</li>
+<li>
+<p><font color='green'size='5'>管理员信息表</font><code>admin</code>:          </p>
+<ul>
+<li><code>admin_id</code>:  管理员表的编号信息</li>
+<li><code>admin_name</code>:  管理员的姓名</li>
+<li><code>admin_password</code>:  管理员的密码信息</li>
+</ul>
+</li>
+<li>
+<p><font color='green'size='5'> 使用人员信息表</font><code>user</code>:            </p>
+<ul>
+<li><code>user_id</code>:  使用人员的编号信息</li>
+<li><code>user_name</code>:  使用人员的名称</li>
+<li><code>user_job</code>:  使用人员的职位</li>
+<li><code>user_remark</code>:  使用人员本身的备注信息</li>
+</ul>
+</li>
+</ul>
+<hr />
+<!-- UY BEGIN -->
+
+<div id="uyan_frame"></div>
+
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+
+<!-- UY END -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Classes/" class="btn btn-neutral float-right" title="Classes">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../RequirementAnalysis/" class="btn btn-neutral" title="Requirement Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../RequirementAnalysis/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Classes/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

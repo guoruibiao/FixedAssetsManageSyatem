@@ -1,0 +1,12 @@
+site_name: 郭瑞彪&姚晋宏 固定资产管理系统 
+pages:
+- Home: index.md
+- Requirement Analysis: RequirementAnalysis.md 
+- Database Design: DatabaseDesign.md
+- Classes: Classes.md
+- Project Structure & Project Hierachy: ProjectStructureAndHierachy.md
+- The Usage of Generic paradigm: GenericParadigm.md
+- User Interface Show: UserInterfaceShow.md
+- Experience: Experience.md
+- aboutus: aboutus.md
+theme: readthedocs

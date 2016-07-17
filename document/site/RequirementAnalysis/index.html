@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Requirement Analysis - 郭瑞彪&姚晋宏 固定资产管理系统</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Requirement Analysis";
+    var mkdocs_page_input_path = "RequirementAnalysis.md";
+    var mkdocs_page_url = "/RequirementAnalysis/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> 郭瑞彪&姚晋宏 固定资产管理系统</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Home</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Requirement Analysis</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#requirement-analysis">Requirement Analysis</a></li>
+                
+                    <li><a class="toctree-l4" href="#references">References</a></li>
+                
+                    <li><a class="toctree-l4" href="#functions">Functions</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../DatabaseDesign/">Database Design</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Classes/">Classes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../ProjectStructureAndHierachy/">Project Structure & Project Hierachy</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../GenericParadigm/">The Usage of Generic paradigm</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../UserInterfaceShow/">User Interface Show</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../Experience/">Experience</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../aboutus/">aboutus</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">郭瑞彪&姚晋宏 固定资产管理系统</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Requirement Analysis</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="requirement-analysis">Requirement Analysis</h1>
+<p>This is the most important thing for us before developing. So let's have a look.</p>
+<h2 id="references">References</h2>
+<p>We just using teacher's document as our reference. And we also search some words from the internet.</p>
+<ul>
+<li>
+<p><font color='red'>FixedAssets:</font> which value more than 2000￥。</p>
+</li>
+<li>
+<p>raw document:
+    随着公司业务不断发展，人员越来越多，固定资产的管理人员压力逐渐增大，需要建立数据库和使用软件系统来进行管理。</p>
+</li>
+</ul>
+<h2 id="functions">Functions</h2>
+<ul>
+<li>
+<p>管理员登录:
+    要使用本系统必须先登录，并且只有固定资产管理员能够登录。登录的时候需要填写正确的用户名和密码，管理员可以修改自己的密码。系统允许有多个固定资产的管理员，每个管理员的权限相同。</p>
+</li>
+<li>
+<p>固定资产信息管理      </p>
+<ul>
+<li>
+<p>固定资产类别管理：</p>
+<p>固定资产的类别在录入资产信息之前就定义好，录入资产信息之后可以增加新的类别。类别要求分为两级，如大类可以是办公外设、数码产品、计算机等；小类分为办公外设：传真机、复印机、打印机、其它；数码产品：数码相机、投影仪；计算机：笔记本电脑、台式机、服务器等。
+类别应允许添加和删除操作。
+    - 固定资产信息管理：</p>
+<p>资产的信息包括编号、名称、类别、型号、价值、购买日期、状态、使用者、备注等。资产型号是文本信息，资产的状态分为：正常、维修、报废，使用者为空表示资产未被使用。资产应允许执行添加、修改和删除操作。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>人员信息管理</p>
+<p>这里的“人员”是指可能领用资产的人，人员的信息包括人员编号、姓名、职务和备注。</p>
+</li>
+<li>
+<p>资产的领用</p>
+<p>已经登记的人员，可以领用固定资产，领用时需要记录的信息有：设备编号、领用日期、管理员、用途、备注。只有状态为正常且使用者为空的资产才能被领用，在维修或者已经报废的资产不能够领用。</p>
+</li>
+<li>
+<p>资产的归还
+    资产使用完毕后要归还给管理员，需要记录如下信息：设备编号，归还日期，管理员。</p>
+</li>
+<li>
+<p>资产信息浏览和查询 </p>
+<ul>
+<li>
+<p>按资产类别浏览：
+    分类分成两级，要求能显示大类和小类下面的资产情况，资产状况。</p>
+</li>
+<li>
+<p>查询资产信息：
+    可以按照资产编号、资产类别、使用者查询详细信息。按照使用者查询显示该人员领用的所有资产</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<!-- UY BEGIN -->
+
+<div id="uyan_frame"></div>
+
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
+
+<!-- UY END -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../DatabaseDesign/" class="btn btn-neutral float-right" title="Database Design">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../DatabaseDesign/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
